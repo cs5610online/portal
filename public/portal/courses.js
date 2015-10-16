@@ -49,7 +49,8 @@
             , {title: "Bootstrap"}
           ],
           assignments: [
-              {title: 'User Interface Development'}
+              {title: 'User Interface Development'},
+              {title: 'Project Proposal'}
           ],
           css_examples: [
               { title: "Box",
@@ -101,15 +102,33 @@
                 src: "grid.html" }
           ],
           bootstrap_examples : [
-              { title: "Forms",
-                base: "/experiments/bootstrap/",
-                src: "forms.html" }
-            , { title: "Jumbotron",
-                base: "/experiments/bootstrap/",
-                src: "jumbotron.html" }
-            , { title: "Tables",
-                base: "/experiments/bootstrap/",
-                src: "tables.html" }
+              { title: "Grid Lg",
+                  base: "/experiments/bootstrap/",
+                  src: "gridLg.html" }
+              , { title: "Grid Md",
+                  base: "/experiments/bootstrap/",
+                  src: "gridMd.html" }
+              , { title: "Grid Sm",
+                  base: "/experiments/bootstrap/",
+                  src: "gridSm.html" }
+              , { title: "Grid Xs",
+                  base: "/experiments/bootstrap/",
+                  src: "gridXs.html" }
+              , { title: "Forms",
+                  base: "/experiments/bootstrap/",
+                  src: "forms.html" }
+              , { title: "Tables",
+                  base: "/experiments/bootstrap/",
+                  src: "tables.html" }
+              , { title: "Tabs",
+                  base: "/experiments/bootstrap/",
+                  src: "tabs.html" }
+              , { title: "Jumbotron",
+                  base: "/experiments/bootstrap/",
+                  src: "jumbotron.html" }
+              , { title: "Dashboard",
+                  base: "/experiments/bootstrap/",
+                  src: "dashboard.html" }
             , { title: "Blog",
                 base: "/experiments/bootstrap/",
                 src: "webdev.html" }
@@ -117,12 +136,14 @@
         }
         , {
           title: 'Client Side Development',
-          available: false,
+          available: true,
           lectures: [
-            {title: 'Javascript'}
+            {title: 'JavaScript'}
             , {title: 'JQuery'}
           ],
-          assignments: [],
+          assignments: [
+              {title: 'Programming the Client'}
+          ],
           videos: [],
           slides: [],
           javaScript_examples: [
@@ -192,6 +213,60 @@
                 }
               }
           ],
+          jQuery_examples: [
+              {
+                  title: "Install",
+                  base: "/experiments/jquery/",
+                  src: "00-install.html",
+                  dependencies: {}
+              }
+              ,{
+                  title: "Main",
+                  base: "/experiments/jquery/",
+                  src: "05-main.html",
+                  dependencies: {
+                      "05-main.js":"05-main.js"
+                  }
+              }
+              ,{
+                  title: "HTML",
+                  base: "/experiments/jquery/",
+                  src: "10-html.html",
+                  dependencies: {
+                      "10-html.js":"10-html.js"
+                  }
+              }
+              ,{
+                  title: "Append",
+                  base: "/experiments/jquery/",
+                  src: "15-append.html",
+                  dependencies: {
+                      "15-append.js":"15-append.js"
+                  }
+              }
+              ,{
+                  title: "Click",
+                  base: "/experiments/jquery/",
+                  src: "20-click.html",
+                  dependencies: {
+                      "20-click.js":"20-click.js"
+                  }
+              }
+              ,{
+                  title: "IMDB",
+                  base: "/lectures/jquery/",
+                  src: "imdb.html",
+                  dependencies: {
+                      "imdb.js":"imdb.js"
+                  }
+              }
+              ,{
+                  title: "AJAX",
+                  base: "/experiments/jquery/",
+                  src: "100-ajax.html",
+                  dependencies: {}
+              }
+          ],
           jQueryUi_examples: [
             {
               title: "Draggable",
@@ -205,12 +280,159 @@
               src: "110-datepicker.html",
               dependencies: {}
             }
-            ,{
-              title: "Accordions",
-              base: "/experiments/jqueryui/",
-              src: "120-accordions.html",
-              dependencies: {}
-            }
+              ,{
+                  title: "Accordions",
+                  base: "/experiments/jqueryui/",
+                  src: "120-accordions.html",
+                  dependencies: {}
+              }
+              ,{
+                  title: "Sortable",
+                  base: "/experiments/jqueryui/",
+                  src: "150-sortable.html",
+                  dependencies: {}
+              }
+              ,{
+                  title: "Resizable",
+                  base: "/experiments/jqueryui/",
+                  src: "200-resizable.html",
+                  dependencies: {}
+              }
+              ,{
+                  title: "Dialog",
+                  base: "/experiments/jqueryui/",
+                  src: "250-dialog.html",
+                  dependencies: {}
+              }
+              ,{
+                  title: "Autocomplete",
+                  base: "/experiments/jqueryui/",
+                  src: "300-autocomplete.html",
+                  dependencies: {}
+              }
+          ],
+          AngularJS_examples: [
+              {
+                  title: "Hello",
+                  base: "/experiments/angularjs/hello/",
+                  src: "index.html",
+                  dependencies: {
+                      "app.js":"app.js"
+                  }
+              },
+              {
+                  title: "NgClick",
+                  base: "/experiments/angularjs/ngClick/",
+                  src: "index.html",
+                  dependencies: {
+                      "app.js":"app.js"
+                  }
+              },
+              {
+                  title: "NgModel",
+                  base: "/experiments/angularjs/ngModel/",
+                  src: "index.html",
+                  dependencies: {
+                      "app.js":"app.js"
+                  }
+              },
+              {
+                  title: "NgRoute",
+                  base: "/experiments/angularjs/ngRoute/",
+                  src: "index.html",
+                  dependencies: {
+                      "app.js":"app.js",
+                      "home.html":"home.html",
+                      "profile.html":"profile.html",
+                      "admin.html":"admin.html"
+                  }
+              },
+              {
+                  title: "NgRouteLocation",
+                  base: "/experiments/angularjs/ngRouteLocation/",
+                  src: "index.html",
+                  dependencies: {
+                      "app.js":"app.js",
+                      "home.html":"home.html",
+                      "profile.html":"profile.html",
+                      "admin.html":"admin.html"
+                  }
+              },
+              {
+                  title: "NgRouteControllers",
+                  base: "/experiments/angularjs/ngRouteControllers/",
+                  src: "index.html",
+                  dependencies: {
+                      "app.js":"app.js",
+                      "config.js":"config.js",
+                      "home.view.html":"home/home.view.html",
+                      "home.controller.js":"home/home.controller.js",
+                      "profile.view.html":"profile/profile.view.html",
+                      "profile.controller.js":"profile/profile.controller.js",
+                      "admin.view.html":"admin/admin.view.html",
+                      "admin.controller.js":"admin/admin.controller.js"
+                  }
+              },
+              {
+                  title: "NgRepeat",
+                  base: "/experiments/angularjs/ngRepeat/",
+                  src: "index.html",
+                  dependencies: {
+                      "app.js":"app.js",
+                      "example1.controller.js":"example1.controller.js",
+                      "example2.controller.js":"example2.controller.js"
+                  }
+              },
+              {
+                  title: "Courses 1",
+                  base: "/experiments/angularjs/courses1/",
+                  src: "index.html",
+                  dependencies: {
+                      "app.js":"app.js",
+                      "config.js":"config.js",
+                      "courseList.view.html":"courseList/courseList.view.html",
+                      "courseList.controller.js":"courseList/courseList.controller.js",
+                      "courseOverview.view.html":"courseOverview/courseOverview.view.html",
+                      "courseOverview.controller.js":"courseOverview/courseOverview.controller.js"
+                  }
+              },
+              {
+                  title: "Courses 2",
+                  base: "/experiments/angularjs/courses2/",
+                  src: "courses.html",
+                  dependencies: {
+                      "main.js":"main.js",
+                      "courses.js":"courses.js"
+                  }
+              },
+              {
+                  title: "Routing 1",
+                  base: "/experiments/angularjs/routing1/",
+                  src: "index.html",
+                  dependencies: {
+                      "index.html":"index.html",
+                      "app.js":"app.js",
+                      "config.js":"config.js",
+                      "courses.view.html":"courses/courses.view.html"
+                  }
+              },
+              {
+                  title: "Routing 2",
+                  base: "/experiments/angularjs/routing2/",
+                  src: "index.html",
+                  dependencies: {
+                      "index.html":"index.html",
+                      "app.js":"app.js",
+                      "config.js":"config.js",
+                      "home.html":"home.view.html",
+                      "navController.js":"navController.js",
+                      "profile.html":"profile.html",
+                      "profile.js":"profile.js",
+                      "users.html":"userController.js",
+                      "userController.js":"userController.js",
+                      "userService.js":"userService.js"
+                  }
+              }
           ]
         }
         , {
