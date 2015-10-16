@@ -494,9 +494,7 @@
           visible: true,
           available: false,
           lectures: [
-              {title: 'Creating a Node.js Server'}
-            , {title: 'Web Services'}
-      			, {title: 'Updating Data'}
+              {title: 'EJS'}
           ],
           assignments: [],
           videos: [],
