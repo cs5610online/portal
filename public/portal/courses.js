@@ -437,7 +437,12 @@
         }
         , {
           title: 'Server Side Development',
-          available: false
+          available: false,
+		  lectures: [
+              {title: 'Creating a Node.js Server'}
+            , {title: 'Web Services'}
+            , {title: 'Updating Data'}
+          ]
         }
         , {
           title: 'Database Development',
